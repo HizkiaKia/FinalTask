@@ -26,17 +26,17 @@ export default function Page() {
     }
   }, [credits]);
 
-
   return (
     <>
-      <header className="py-2 shadow-md shadow-gray-600">
-        <nav className="grid grid-cols-3 mx-auto container   justify-between items-center">
-          <Image src={logo} alt="logo" width="100" height="100" />
-
-          <input type="text" placeholder="Searching" />
-          <p className="font-extrabold text-right">KIA</p>
-        </nav>
-      </header>
+       <header className="py-2 shadow-md shadow-gray-600">
+          <nav className="grid grid-cols-3 mx-auto container   justify-between items-center">
+            <Link href="/">
+            <Image src={logo} alt="logo" width="100" height="100" />
+            </Link>
+              <input type="text" placeholder="Searching" />
+            <p className="font-extrabold text-right">KIA</p>
+          </nav>
+        </header>
       <div className="h-[300px] md:h-[424px] w-full m-auto">
         <div className="bg-gradient-to-b carousel h-full w-full">
           <div
@@ -110,66 +110,24 @@ export default function Page() {
         </ul>
       </div>
       <div>
-        <div className=" ">
-          <h1 style={{ fontFamily: "RobotoBold" }} className="text-6xl ">
+        <div className=" container mx-auto mb-10">
+          <h1 style={{ fontFamily: "RobotoBold" }} className="text-6xl">
             Synopsis
           </h1>
-        </div>
+        <p className="mb-5">{detail.overview}~</p>
         <p>{detail.overview}~</p>
+        </div>
       </div>
-      <div>
-        <h1 style={{ fontFamily: "RobotoBold" }} className="text-6xl ">
+      <div className="container mx-auto mb-10">
+        <h1 style={{ fontFamily: "RobotoBold" }} className="text-6xl  ">
           Movie Info
         </h1>
-        <p></p>
-      </div>
-      <div className="container mt-5 mx-auto p-6 sm:px-12 md:py-8 lg:px-0 xl:px-12">
-        <div className="mb-8 lg:px-8">
-          <div className="flex gap-4 mb-8 overflow-auto">
-            <button onClick={() => setMenu(0)}>
-              <div
-                className={`${
-                  menu === 0
-                    ? "bg-primary py-1 px-4 rounded-full text-white transition-colors hover:text-white"
-                    : ""
-                } max-w-fit text-lg md:text-xl xl:text-2xl hover:text-primary`}
-              >
-                Overview
-              </div>
-            </button>
-            <button onClick={() => setMenu(1)} disabled={!credits || isLoading}>
-              <div
-                className={`${
-                  menu === 1
-                    ? "bg-primary py-1 px-4 rounded-full text-white transition-colors hover:text-white"
-                    : ""
-                } ${
-                  !credits || isLoading ? "cursor-not-allowed" : ""
-                } max-w-fit text-lg md:text-xl xl:text-2xl hover:text-primary`}
-              >
-                Characters
-              </div>
-            </button>
-            <button onClick={() => setMenu(2)} disabled={!reviews || isLoading}>
-              <div
-                className={`${
-                  menu === 2
-                    ? "bg-primary py-1 px-4 rounded-full text-white transition-colors hover:text-white"
-                    : ""
-                } max-w-fit text-lg md:text-xl xl:text-2xl hover:text-primary`}
-              >
-                Review
-              </div>
-            </button>
-          </div>
-        </div>
-        {menu === 1 ? (
-          <CastList castList={credits} />
-        ) : menu === 2 ? (
-          <Review reviews={reviews} />
-        ) : (
-          <Overview overview={detail} />
-        )}
+        <p>Realease Date : {detail.release_date}</p>
+        <p>Status : {detail.status}</p>
+        <p>Vote Count : {detail.vote_count}</p>
+        <p>Vote Average : {detail.vote_average}</p>
+        <p>Popularity : {detail.popularity}</p>
+        <p>Tagline : {detail.tagline}</p>
       </div>
       <footer>
         <Footer />

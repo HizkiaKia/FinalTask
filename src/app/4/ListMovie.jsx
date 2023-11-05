@@ -76,7 +76,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-red-500 rounded-full outline-offset-1 py-2 px-4 "
               rel="stylesheet"
               href="/?page=1"
             >
@@ -85,7 +85,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=2"
             >
@@ -94,7 +94,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=3"
             >
@@ -103,7 +103,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=4"
             >
@@ -112,7 +112,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=5"
             >
@@ -121,7 +121,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=6"
             >

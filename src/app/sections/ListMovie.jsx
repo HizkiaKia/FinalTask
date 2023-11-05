@@ -25,7 +25,7 @@ export default function ListMovie() {
         <ul className="flex items-center gap-3 pl-20 justify-between mt-5 mb-5">
           <li className="sm:text-sm md:text-sm lg:text-lg ">
             <Link
-              className=" bg-red-500  outline-offset-1 rounded-full py-2 px-4"
+              className=" bg-red-500  outline-offset-1  rounded-full py-2 px-4"
               href="/"
             >
               All
@@ -58,7 +58,7 @@ export default function ListMovie() {
         </ul>
       <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-1 justify-center sm:justify-around gap-5">
         {data?.results?.map((item, index) => (
-          <Link href={`/movie/${movie.id}`} key={movie.id}>
+          <Link href={`/movie/${item.id}`} key={item.id}>
             <Card
               image={item.poster_path}
               overview={item.overview}
@@ -77,7 +77,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-red-500 rounded-full outline-offset-1 py-2 px-4 "
               rel="stylesheet"
               href="/?page=1"
             >
@@ -86,7 +86,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=2"
             >
@@ -95,7 +95,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=3"
             >
@@ -104,7 +104,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=4"
             >
@@ -113,7 +113,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=5"
             >
@@ -122,7 +122,7 @@ export default function ListMovie() {
           </li>
           <li>
             <Link
-              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500  outline-offset-1 py-2 px-4 "
+              className="bg-white hover:bg-red-400 active:bg-violet-500 focus:bg-red-500 rounded-full outline-offset-1  py-2 px-4 "
               rel="stylesheet"
               href="/?page=6"
             >

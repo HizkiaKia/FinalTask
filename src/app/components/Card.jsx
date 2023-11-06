@@ -13,7 +13,7 @@ export default function Card({
         <>
         <div className="rounded-md bg-gray-200">
             <Image className="rounded-t-md" src={imageUrl + image} alt={title} priority width="500" height="500" />
-            <div className="px-2 mt-10">
+            <div className="px-2 mt-2">
                 <h3 className="font-semibold text-lg">{title}</h3>
                 <div>
                     <p>{overview.length > 50 ? overview.slice(0, 50) + '...' : overview}</p>

@@ -24,7 +24,7 @@ export default function Home() {
       <main className="container mx-auto mt-10 relative">
         <ListMovie />
       </main>
-      <footer className="bottom-0">
+      <footer className="bottom-0 mb-0">
         <Footer />
       </footer>
     </>

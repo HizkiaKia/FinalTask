@@ -129,7 +129,7 @@ export default function Page() {
         <p>Popularity : {detail.popularity}</p>
         <p>Tagline : {detail.tagline}</p>
       </div>
-      <footer>
+      <footer className="bottom-0">
         <Footer />
       </footer>
     </>

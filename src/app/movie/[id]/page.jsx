@@ -74,7 +74,7 @@ export default function Page() {
                     </div>
                   </Link>
                   <Link href="#">
-                    <div className="bg-transparent hidden sm:block border-2 py-3 px-6 rounded-md max-w-fit text-lg md:text-xl hover:bg-primary transition-colors hover:border-none">
+                    <div className="bg-transparent hidden sm:block border-2 py-3 px-6 rounded-md max-w-fit text-lg md:text-xl hover:bg-green-800 transition-colors hover:border-none">
                       Add to Watchlist
                     </div>
                     <div className="bg-transparent border-2 visible sm:hidden py-3 px-6 rounded-md max-w-fit text-lg md:text-xl hover:bg-primary transition-colors hover:border-none">
